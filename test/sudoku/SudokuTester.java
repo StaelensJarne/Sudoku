@@ -9,16 +9,14 @@ import org.junit.*;
 
 /**
  *
- * @author jarne
+ * @author Jarne Staelens
  */
 public class SudokuTester {
-    
-    //@Ignore // negeert de test 
+     
     @Test
     public void testToString()
     {
         Sudoku s = new Sudoku(3, 3);
-        //System.out.println(s.toString());
         Assert.assertEquals("-------------------------\n" +
                             "| 0 0 0 | 0 0 0 | 0 0 0 |\n" +
                             "| 0 0 0 | 0 0 0 | 0 0 0 |\n" +
@@ -38,7 +36,6 @@ public class SudokuTester {
     public void testReadSudokuFromFile()
     {
         Sudoku s = new Sudoku("src/data/test.sudoku");
-        //System.err.println(s.toString());
         Assert.assertEquals(1, s.getValue(1, 1));
         Assert.assertEquals(1, s.getValue(4, 2));
         Assert.assertEquals(3, s.getValue(6, 6));
@@ -118,7 +115,6 @@ public class SudokuTester {
         Sudoku s = new Sudoku(3, 2);
         int geldigeRij = -1;
         int geldigeKolom = 4;
-        int geldigeWaarde = 6;
         
         s.empty(geldigeRij, geldigeKolom);
         
@@ -131,14 +127,12 @@ public class SudokuTester {
         Sudoku s = new Sudoku(3, 2);
         int geldigeRij = 3;
         int geldigeKolom = -1;
-        int geldigeWaarde = 6;
         
         s.empty(geldigeRij, geldigeKolom);
         
         Assert.assertTrue(s.isEmpty(geldigeRij, geldigeKolom));
     }
-    
-    
+     
     @Test
     public void testIsValidValueGeldigeWaarde()
     {
@@ -193,12 +187,8 @@ public class SudokuTester {
     public void testSpelregelBlok()
     {
         Sudoku s = new Sudoku(3, 2);
-        //int geldigeRij = 3;
-        //int geldigeKolom = 4;
         int geldigeRij = 1;
         int geldigeKolom = 5;
-        //int nogEenRijInDezelfdeBlok = 1;
-        //int nogEenKolomInDezelfdeBlok = 3;
         int nogEenRijInDezelfdeBlok = 3;
         int nogEenKolomInDezelfdeBlok = 6;
         int geldigeWaarde = 6;

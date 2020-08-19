@@ -9,7 +9,7 @@ import org.junit.*;
 
 /**
  *
- * @author jarne
+ * @author Jarne Staelens
  */
 public class SimpleSolverTester {
     
@@ -21,9 +21,6 @@ public class SimpleSolverTester {
         
         s = ss.solve(s);
         
-        System.err.println(s.toString());
-        
-        
+        System.err.println(s.toString());   
     }
-    
 }

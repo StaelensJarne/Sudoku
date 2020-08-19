@@ -14,7 +14,7 @@ import java.util.Stack;
 
 /**
  *
- * @author jarne
+ * @author Jarne Staelens
  */
 public class Sudoku 
 {
@@ -32,7 +32,7 @@ public class Sudoku
         this.blokBreette = blokBreette;
         size = blokHoogte * blokBreette;
         cellen = new int[size][size];
-        veranderingen = new Stack();
+        veranderingen = new Stack<>();
     }
     
     public Sudoku(int blokHoogte, int blokBreette)

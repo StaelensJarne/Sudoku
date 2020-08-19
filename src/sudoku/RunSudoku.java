@@ -7,7 +7,7 @@ package sudoku;
 
 /**
  *
- * @author jarne
+ * @author Jarne Staelens
  */
 public class RunSudoku {
 
@@ -15,10 +15,8 @@ public class RunSudoku {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
         Sudoku s = new Sudoku(3, 3);
-        fillinSudoku(s);
-        System.out.println(s.toString());        
+        fillinSudoku(s);     
     }
     
     public static void fillinSudoku(Sudoku s){

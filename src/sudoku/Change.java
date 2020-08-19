@@ -7,7 +7,7 @@ package sudoku;
 
 /**
  *
- * @author jarne
+ * @author Jarne Staelens
  */
 public class Change 
 {

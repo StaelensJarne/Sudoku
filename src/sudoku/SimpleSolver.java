@@ -7,7 +7,7 @@ package sudoku;
 
 /**
  *
- * @author jarne
+ * @author Jarne Staelens
  */
 public class SimpleSolver 
 {
@@ -25,10 +25,8 @@ public class SimpleSolver
             {
                 solution.setValue(row, colum, value);
                 value++;
-            }
-            
+            } 
         }
         return solution;
     }
-    
 }
