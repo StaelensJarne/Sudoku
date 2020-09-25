@@ -16,7 +16,8 @@ public class RunSudoku {
      */
     public static void main(String[] args) {
         Sudoku s = new Sudoku(3, 3);
-        fillinSudoku(s);     
+        fillinSudoku(s); 
+        System.out.println(s);
     }
     
     public static void fillinSudoku(Sudoku s){
